@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Settings Sample</title>
+
+    <!-- jQuery -->
+    <script src="./jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./bootstrap.min.css" >
+    <script src="./bootstrap.min.js" ></script>
+
+    <!-- Extensions Library (hosted from extension hosting server) -->
+    <script src="./tableau.extensions.1.latest.js"></script>
+
+    <!-- Our extension's code -->
+    <script src="./uiNamespaceDialog.js"></script>
+  </head>
+  <body>
+    <label for="server_link">SERVER URL: </label>
+    <input type="text" id="server_link" name="server_link"><br><br>
+    <label for="site_link">SITE URL: </label>
+    <input type="text" id="site_link" name="site_link"><br><br>
+    <label for="workbook_link">WORKBOOK NAME: </label>
+    <input type="text" id="workbook_link" name="workbook_link"><br><br>
+    <label for="dashboard_link">VIEW (DASHBOARD OR WORKSHEET) NAME: </label>
+    <input type="text" id="dashboard_link" name="dashboard_link"><br><br>
+    <label for="tooltip_text">TOOLTIP FOR DOWNLOAD BUTTON </label>
+    <input type="text" id="tooltip_text" name="tooltip_text"><br><br>
+    <h3>Choose Worksheet</h3>
+    <div id="div_worksheet_id"></div>
+    <h3>Choose Filters</h3>
+    <div id="div_filter_id"></div>
+    <h3>Choose Parameters</h3>
+    <div id="div_parameter_id"></div>
+    <br><br>
+    <button id="save" class="btn btn-success">Save</button>
+    <button id="cancel" class="btn btn-danger">Cancel</button>
+  </body>
+</html>

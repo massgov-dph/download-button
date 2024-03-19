@@ -1,0 +1,38 @@
+<head>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./font-awesome.min.css">
+    <script src="./jquery.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+
+    <!-- Extensions Library (hosted from extension hosting server) -->
+    <script src="./tableau.extensions.1.latest.js"></script>
+
+    <!-- Our extension's code -->
+    <script src="./uiNamespace.js"></script>
+    <script>
+    $(document).ready(function () {
+        $('#input_button').hide();
+        $('#input_button').click();
+    })
+    function get()
+    {
+        $('#status_div').html('Download in Progress.....');
+        setTimeout(function() {
+            $('#status_div').html('Download Completed.');
+            //tableau.extensions.ui.closeDialog("");
+        }, 90000)
+        //}, 7000)
+        setTimeout(function() {
+            tableau.extensions.ui.closeDialog("");
+        }, 150000)
+        
+    }
+
+    </script>
+    </head>
+    <body>
+    <h1>Please wait</h1>
+    <div id='status_div'></div>
+    <input id="input_button" type="button" value="GET" onclick="get()">
+    </body>

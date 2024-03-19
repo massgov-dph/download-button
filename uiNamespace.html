@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Settings Sample</title>
+
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <!--link rel="stylesheet" href="./font-awesome.min.css"-->
+    <script src="./jquery.min.js"></script>
+    <!--script src="./popper.min.js"></script-->
+    <script src="./bootstrap.min.js"></script>
+
+    <!-- Extensions Library (hosted from extension hosting server) -->
+    <script src="./tableau.extensions.1.latest.js"></script>
+
+    <!-- Our extension's code -->
+    <script src="./uiNamespace.js"></script>
+  <style>
+    body {
+      display: flex;
+    }
+  </style>
+  </head>
+  <body>
+    <a id="primaryButton" target='blank' type="button" class="allow_click" tabindex="-1"></a>
+    <!--a id="primaryButton" type="button" class="allow_click" tabindex="-1"></a-->
+    <div>
+      <button id="submit" type="submit" class="allow_click" data-toggle="tooltip" title="" style='background-color: white; border: none; padding: 0 0 0 0;'><img id="image_id" class="allow_click" style='max-width: 38px; max-height: 31px; background-color: white; border: none' src="./dlbutton.PNG" alt=""></button>
+    </div>
+  </body>
+</html>
